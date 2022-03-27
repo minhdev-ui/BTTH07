@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registration</title>
+  </head>
+  <body>
+    <div class="row">
+      <form action="">
+        <div class="row">
+          <div class="col">User ID:</div>
+          <div class="col">
+            <input type="text" name="txtUserID" id="txtUserID" required />
+            <span id="statusOfUserID"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">Password:</div>
+          <div class="col">
+            <input type="password" name="txtPassword" id="txtPassword" />
+            <span id="statusOfPassword"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">Name:</div>
+          <div class="col">
+            <input type="text" name="txtName" id="txtNameId" required />
+            <span id="statusOfName"></span>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">Address:</div>
+            <div class="col">
+              <input type="text" name="address" id="adddressId"/>
+              <span id="statusOfName"></span>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col">Country:</div>
+          <div class="col">
+            <select name="country" id="countryId" required>
+              <option value="1">(please select a country)</option>
+              <option value="2">Japan</option>
+              <option value="3">VietNam</option>
+              <option value="4">Korea</option>
+            </select>
+            <span id="statusOfCountry"></span>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">Zip Code:</div>
+            <div class="col">
+              <input type="text" name="txtZip" id="txtZipId" required />
+              <span id="statusOfZip"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">Email:</div>
+            <div class="col">
+              <input type="text" name="txtEmail" id="txtEmailId" required />
+              <span id="statusOfEmail"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">Sex:</div>
+            <div class="col">
+              <label for="">Male</label>
+              <input type="radio" name="sex" class="sexId" value="male" required />
+              <label for="">Female</label>
+              <input type="radio" name="sex" class="sexId" value="female" required />
+              <span id="statusOfSex"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">Language:</div>
+            <div class="col">
+              <label for="">English</label>
+              <input type="checkbox" name="lang" class="langId" value="lang" required />
+              <label for="">Non English</label>
+              <input type="checkbox" name="lang" class="langId" value="non-lang" required />
+              <span id="statusOfLang"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">About:</div>
+            <div class="col">
+              <textarea>
+
+              </textarea>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <input
+              type="submit"
+              name="btnRegister"
+              id="btnRegister"
+              value="Register"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
